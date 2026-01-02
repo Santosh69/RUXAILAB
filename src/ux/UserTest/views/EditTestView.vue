@@ -50,7 +50,7 @@
 
           <!-- PRE-TEST -->
           <div v-if="index === 2">
-            <UserVariables type="pre-test" @change="change = true" @update="store.dispatch('setPreTest', $event)" />
+            <UserVariables type="pre-test" @change="change = true" @update="store.dispatch('UserStudy/setPreTest', $event)" />
           </div>
 
           <!-- TASKS -->
@@ -59,7 +59,7 @@
           </div>
           <!-- POST-TEST -->
           <div v-if="index === 4">
-            <UserVariables type="post-test" @change="change = true" @update="store.dispatch('setPostTest', $event)" />
+            <UserVariables type="post-test" @change="change = true" @update="store.dispatch('UserStudy/setPostTest', $event)" />
           </div>
 
           <v-card v-if="index === 5 && hasEyeTracking" rounded="xxl">
