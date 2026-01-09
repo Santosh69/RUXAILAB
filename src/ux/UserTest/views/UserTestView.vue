@@ -431,7 +431,7 @@ function saveIrisDataIntoTask() {
 
   const task = test.value.testStructure.userTasks[taskIndex.value]
 
-  if (task?.hasEye === true && globalIndex.value >= 5) {
+  if (task?.hasEye === true && globalIndex.value >= 3) {
     const shouldRecord = task.recordScreen === undefined || task.recordScreen; 
     toggleTracking(true, shouldRecord);
   } else {
